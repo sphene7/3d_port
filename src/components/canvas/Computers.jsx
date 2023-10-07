@@ -11,7 +11,7 @@ const Computers = ({ isMobile }) => {
     <mesh>
       <hemisphereLight intensity={10.15} groundColor='blue' />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[0, 0, 0]}
         angle={0.5}
         penumbra={1}
         intensity={1}
@@ -58,7 +58,7 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [0, 3, 5], fov: 25 }}
+      camera={{ position: [20, 9, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
